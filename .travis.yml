@@ -31,6 +31,10 @@ jobs:
       os: linux
       dist: xenial
       arch: arm64
+      before_install:
+        - sudo apt-get update -y
+        - sudo apt-get install -y pkg-config
+        - sudo apt install libhdf5-dev
     - name: "Python 3.7 on macOS"
       os: osx
       osx_image: xcode11.5  # Python 3.7 running on macOS 10.14.4
