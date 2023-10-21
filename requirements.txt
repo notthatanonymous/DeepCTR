@@ -1,5 +1,5 @@
 pandas
 scikit-learn
 urllib3==1.26.6
-h5py
+h5py==2.9.0
 tensorflow<=2.6.2
